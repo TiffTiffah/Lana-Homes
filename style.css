@@ -36,6 +36,8 @@ body{
     justify-content: space-between;
     padding: 0 5%;
     position:fixed;
+    top: 0;
+    z-index: 99;
     
 }
 
@@ -52,7 +54,7 @@ body{
 
 }
 .nav-bar .nav-menu li{
-    position: relative;
+    /* position: relative; */
     display: flex;
     align-items: center;
     list-style: none;
@@ -75,7 +77,6 @@ body{
     position:absolute;
     display: block;
     top: 4.4rem;
-    left: 0;
     overflow: hidden;
     border-radius: 2px;
 }
@@ -131,3 +132,66 @@ body{
     font-weight: 400;
     transition: var(--transition);
 }
+/* ------------------------------------------------- Home Banner--------------------------------------------- */
+.home-banner{
+    height: 95vh;
+    margin-top: 5rem;
+    
+}
+/* Slideshow container */
+.home-banner .slideshow-container {
+    position: relative;
+    margin: auto;
+    height: 90vh;
+
+    
+  }
+  .color-gradient{
+    /* background-color: rgb(217, 151, 26,.6); */
+    z-index: 2;
+
+  }
+
+  .img-slider{
+      display: none;
+      height: 90vh;
+  }
+  .img-slider img{
+      vertical-align: middle;
+      width: 100%;
+      object-position: center;
+      object-fit: cover;
+      height: 80vh;
+      
+  }
+  /* Fading animation */
+  /* .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 768px) {
+      .text {font-size: 11px}
+    } */
+
+
+    .img-slides-text{
+        position: absolute;
+        float: left;
+        text-align: left;
+        left: 10rem;
+        top: 20rem;
+        color: white;
+    }
+    .img-slides-text h2{
+        font-weight: 400;
+    }
+    .img-slides-text strong{
+        font-size: 3.5rem;
+    }
