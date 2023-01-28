@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="slider.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="slideshow-container">
+
+        <div class="img-slider fade">
+            <img src="./images/Aloui.jpg" alt="">
+
+            <div class="slides-content">
+
+                <div class="slides-content-texts">
+                    <h1>Spacious</h1>
+                    <h2>And Charming Villas</h2>
+
+                    
+                <div class="discover-btn">
+                    <a href="">DISCOVER</a>
+                </div>
+               </div>
+
+            </div>
+
+        </div>
+
+        <div class="img-slider fade">
+            <img src="./images/bali-villa.jpg" alt="">
+
+            <!-- <div class="coloring-slider"></div> -->
+
+            <div class="slides-content">
+                <div class="slides-content-texts">
+                    <h1>Homey Vibe</h1>
+                    <h2>Away From Home</h2>
+
+                    <div class="discover-btn">
+                        <a href="">DISCOVER</a>
+                    </div>
+    
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="img-slider fade">
+            <img src="./images/exotic.jpg" alt="">
+
+            <div class="slides-content">
+                <div class="slides-content-texts">
+                    <h1>We Make Vacations</h1>
+                    <h2>And Getaways Better</h2>
+
+                    <div class="discover-btn">
+                        <a href="">DISCOVER</a>
+                      </div>
+    
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="img-slider fade">
+            <img src="./images/villa seminyak.jpg" alt="">
+
+            <div class="slides-content">
+                <div class="slides-content-texts">
+                    <h1>Come For The Fun,</h1>
+                    <h2>Stay For The Memories</h2>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("img-slider");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          slides[slideIndex-1].style.display = "block";  
+          setTimeout(showSlides, 4000); // Change image every 2 seconds
+        }
+        </script>
+</body>
+</html>
